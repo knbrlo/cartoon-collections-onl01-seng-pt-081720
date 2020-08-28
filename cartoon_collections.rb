@@ -20,7 +20,7 @@ def long_planeteer_calls(array)
       return true
     end
   end
-  
+
   puts array.select{|i| i.length == 4 }
 end
 
