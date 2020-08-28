@@ -11,7 +11,6 @@ def summon_captain_planet(array)
   array.each do |name|
     array_capitalized << "#{name.capitalize}!"
   end
-  binding.pry
   array_capitalized
 end
 
