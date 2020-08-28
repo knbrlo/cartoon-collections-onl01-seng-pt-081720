@@ -22,6 +22,12 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_types.each do |cheese|
-    return cheese if array.find{|i| i == cheese}
+    array.find do |i|
+      if i == cheese
+        return cheese
+      else
+        return nil
+      end
+    end
   end
 end
