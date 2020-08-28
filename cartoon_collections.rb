@@ -1,3 +1,5 @@
+require 'pry'
+
 def roll_call_dwarves(array)
   array.each_with_index do |name, index|
     puts "#{index+1}. #{name}"
@@ -7,7 +9,9 @@ end
 def summon_captain_planet(array)
   array_capitalized = []
   array.each do |name|
+    binding.pry
     array_capitalized << "#{name}.upcase!"
+
   end
   array_capitalized
 end
