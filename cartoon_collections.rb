@@ -9,7 +9,7 @@ end
 def summon_captain_planet(array)
   array_capitalized = []
   array.each do |name|
-    array_capitalized << "#{name}.upcase!"
+    array_capitalized << "#{name.capitalize}!"
   end
   binding.pry
   array_capitalized
